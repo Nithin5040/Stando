@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 264 40% 6%; /* Deep Violet */
+    --foreground: 264 15% 95%; /* Light Lavender Text */
+    --card: 264 30% 12%; /* Darker Violet Card */
+    --card-foreground: 264 15% 95%;
+    --popover: 264 40% 4%;
+    --popover-foreground: 264 15% 95%;
+    --primary: 262 83% 68%; /* Bright Lilac */
+    --primary-foreground: 264 40% 6%;
+    --secondary: 264 25% 20%;
+    --secondary-foreground: 264 15% 95%;
+    --muted: 264 25% 20%;
+    --muted-foreground: 264 10% 65%;
+    --accent: 168 56% 50%; /* Teal */
+    --accent-foreground: 264 40% 6%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 264 25% 20%;
+    --input: 264 25% 20%;
+    --ring: 262 83% 68%;
+    --radius: 0.8rem;
+  }
+ 
+  .dark {
+    --background: 264 40% 6%;
+    --foreground: 264 15% 95%;
+    --card: 264 30% 12%;
+    --card-foreground: 264 15% 95%;
+    --popover: 264 40% 4%;
+    --popover-foreground: 264 15% 95%;
+    --primary: 262 83% 68%;
+    --primary-foreground: 264 40% 6%;
+    --secondary: 264 25% 20%;
+    --secondary-foreground: 264 15% 95%;
+    --muted: 264 25% 20%;
+    --muted-foreground: 264 10% 65%;
+    --accent: 168 56% 50%;
+    --accent-foreground: 264 40% 6%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 264 25% 20%;
+    --input: 264 25% 20%;
+    --ring: 262 83% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-lg;
+  }
+}
